@@ -11,6 +11,18 @@ This strategy keeps the public Playbasis GitHub presence candid and useful. The 
 
 ## Repository Tiers
 
+### Tier 0: Separate Current Experiments
+
+These repos may not belong to the legacy-stack story and should be audited before they are linked from the profile:
+
+- `playbasis-ai-sdk`
+
+Expected cleanup:
+
+- Confirm whether the repo is active, experimental, or historical.
+- Add a README status banner that explains its relationship to the legacy Playbasis stack.
+- Avoid mixing AI SDK positioning with the legacy maintenance reset until its scope is verified.
+
 ### Tier 1: Canonical Legacy Stack
 
 These repos should stay prominent and receive the most maintenance:
@@ -49,6 +61,7 @@ These repos can help people understand how clients connected to the legacy API, 
 - `native-sdk-js`
 - `native-sdk-ios`
 - `native-sdk-android`
+- `mobile-sdk-ios`
 - `mobile-sdk-android`
 
 Expected cleanup:
@@ -92,7 +105,12 @@ Expected cleanup:
 
 ### Tier 5: Forks, Client Work, And Private Historical Repos
 
-Forks and client-specific repositories should not be promoted in the public profile. Public forks should be archived or hidden from the profile unless they are intentionally maintained.
+Forks, asset buckets, and client-specific repositories should not be promoted in the public profile. Public forks should be archived or hidden from the profile unless they are intentionally maintained.
+
+Known public examples needing review:
+
+- `kafka-web-console`, a public fork.
+- `cdn`, a historical asset/support repository with an unclear public description.
 
 Expected cleanup:
 
